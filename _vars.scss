@@ -1,0 +1,29 @@
+/* === COLORS === */
+$dark-overlay: rgba(0, 0, 0, .6); //BACKGROUND OVERLAY
+$hover: rgb(252, 95, 38); //WHEN HOVER
+$white: #fff;
+
+/* === IMAGES === */
+$barceloneta: url("../barceloneta.jpg");
+$nice: url("../nice.jpg");
+$split: url("../split.jpg");
+$porto: url("../porto.jpg");
+$barceloneta-crp: url("../barceloneta-crp.jpg");
+$nice-crp: url("../nice-crp.jpg");
+$split-crp: url("../split-crp.jpg");
+$porto-crp: url("../porto-crp.jpg");
+
+/* === ANIMATION === */
+$time: 40s; //FULL ANIMATION TIME
+
+/* === FONT === */
+$font-for-small: 'Montserrat', sans-serif;
+$font-for-main: 'Roboto', Helvetica, sans-serif;
+$light: 300;
+$bold: 700;
+
+/* === UTIL === */
+$decrement: 20px;
+$md: 1300px;
+$sm: 600px;
+$xsm: 430px;

@@ -1,0 +1,27 @@
+@keyframes changeMainBackground {
+
+    0%, 100% {
+
+        background-image: $barceloneta
+
+    }
+
+    25% {
+
+        background-image: $nice
+
+    }
+
+    50% {
+
+        background-image: $split
+
+    }
+
+    75% {
+
+        background-image: $porto
+
+    }
+
+}

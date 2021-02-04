@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+@import "config";
+@import "vars";
+
+/* === BACKGROUND ANIMATIONS ===*/
+@import "change-main-background";
+@import "change-country-main";
+@import "change-city-main";
+
+/* === CARDS ANIMATIONS === */
+@import "change-card1-background";
+@import "change-card1-country";
+@import "change-card1-city";
+
+@import "change-card2-background";
+@import "change-card2-city";
+
+@import "change-card3-background";
+@import "change-card3-city";
+
+@import "change-card4-background";
+@import "change-card4-city";
+
+/* === RESPONSIVE === */
+@import "responsive-design";
+
+
+/* === MAIN WRAPPER === */
+.wrapper {
+
+    width: 100%;
+    height: 100vh;
+    background-image: $barceloneta;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    animation: changeMainBackground $time infinite;
+
+    /* === DARK OVERLAY FOR BACKGROUND === */
+    .overlay {
+
+        z-index: 0;
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        background-color: $dark-overlay;
+
+    }
+
+    /* === CONTENT === */
+    .content {
+
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+
+        /* === TOP BAR === */
+        nav {
+
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            /* === TOP BAR RESPONSIVE === */
+            @include md {
+
+                flex-direction: column;
+
+            }
+
+            /* === LEFT PART === */
+            .left {
+
+                width: 50%;
+
+                ul {
+
+                    li {
+
+                        display: inline-block;
+                        margin: 10px;
+
+                    }
+
+                    .fa-globe {
+
+                        font-size: 30px;
+
+                    }
+
+                }
+
+                /* === LEFT PART RESPONSIVE === */
+                @include md {
+
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+            }
+
+            /* === RIGHT PART === */
+            .right {
+
+                width: 50%;
+
+                ul {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+
+                        transition: all 300ms;
+                        padding-bottom: 5px;
+
+                        &:hover {
+
+                            border-bottom: 2px solid $hover;
+
+                        }
+
+                    }
+
+                    /* === NAVI MENU RESPONSIVE === */
+                    @include sm {
+
+                        font-size: 10px;
+
+                    }
+
+                }
+
+                /* === RIGHT PART RESPONSIVE === */
+                @include md {
+
+                    width: 100%;
+                    margin: 2%;
+
+                }
+
+            }
+
+        }
+
+        /* === MAIN CONTENT === */
+        .main {
+
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 60vh;
+            position: relative;
+            align-items: center;
+
+            /* === LEFT PART === */
+            .main-left {
+
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 5%;
+
+                /* === LEFT PART RESPONSIVE === */
+                @include md {
+
+                    width: 100%;
+                    padding: 0;
+                    align-items: center;
+                    margin-bottom: 20%;
+                    text-align: center;
+
+                }
+
+                @include sm {
+
+                    margin-bottom: 40%;
+
+                }
+
+                @include xsm {
+
+                    margin-bottom: 50%;
+
+                }
+
+                .bar {
+
+                    width: 30px;
+                    height: 3px;
+                    background-color: $white;
+                    margin-bottom: 5px;
+
+                    /* === BAR RESPONSIVE === */
+                    @include md {
+
+                        width: 70px;
+
+                    }
+
+                }
+
+                /* === TITLE AND SUBTITLE WITH ANIMATIONS === */
+                h3, p {
+
+                    font-family: $font-for-small;
+                    font-weight: $light;
+
+                }
+
+                p {
+
+                    /* === PARA REPSONSIVE === */
+                    @include md {
+
+                        width: 400px;
+
+                    }
+
+                    @include sm {
+
+                        font-size: 12px;
+
+                    }
+
+                    @include xsm {
+
+                        width: 300px;
+
+                    }
+
+                }
+
+                h1 {
+
+                    font-size: 450%;
+
+                }
+
+                .country span {
+
+                    display: none;
+
+                }
+
+                .country::after {
+
+                    content: 'Spain';
+                    animation: changeCountryMain $time infinite;
+
+                }
+
+                .city span {
+
+                    display: none;
+
+                }
+
+                .city::after {
+
+                    content: 'BARCELONETA';
+                    font-size: 450%;
+                    font-weight: $bold;
+                    animation: changeCityMain $time infinite;
+
+                    /* === CITY TITLE RESPONSIVE === */
+                    @include sm {
+
+                        font-size: 300%;
+
+                    }
+
+                }
+
+                /* === PARA AND BUTTONS === */
+                .bottom {
+
+                    .save {
+
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background-color: $hover;
+                        margin-right: 10px;
+                        cursor: pointer;
+                        transition: all 300ms;
+
+                        &:hover {
+
+                            transform: scale(1.2);
+
+                        }
+
+                    }
+
+                    .button {
+
+                        line-height: 50px;
+                        text-align: center;
+                        display: inline-block;
+                        margin-left: 10px;
+                        width: 250px;
+                        height: 50px;
+                        border: 1px solid $white;
+                        border-radius: 25px;
+                        cursor: pointer;
+                        transition: all 300ms;
+
+                        &:hover {
+
+                            background-color: $hover;
+                            border: 1px solid $hover;
+
+                        }
+                        
+                        h3 {
+
+                            font-family: $font-for-main;
+                            font-weight: $light;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            /* === RIGHT PART === */
+            .main-right {
+
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding-right: 5%;
+
+                /* === MAIN RIGHT RESPONSIVE === */
+                @include md {
+
+                    display: none;
+
+                }
+
+                /* === CARD === */
+                .card {
+
+                    height: 300px;
+                    width: 23%;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+
+                    /* === CARD'S INFO === */
+                    .info {
+
+                        margin-top: 140%;
+                        margin-left: 5%;
+
+                        .bar {
+
+                            width: 30px;
+                            height: 3px;
+                            background-color: $white;
+                            margin-bottom: 5px;
+
+                        }
+
+                        .country {
+
+                            margin: 10px 0px;
+
+                            p {
+
+                                font-family: $font-for-small;
+                                font-weight: $light;
+
+                            }
+
+                        }
+
+                        h3 {
+
+                            font-family: $font-for-main;
+
+                        }
+
+                    }
+
+                }
+
+                /* === CARD 1 ANIMATIONS === */
+                .card-1 {
+
+                    background-size: cover;
+                    animation: changeCard1Background $time infinite;
+
+                    /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard1Country $time infinite;
+
+                    }
+                    */
+
+                    .city span {
+
+                        display: none;
+
+                    }
+
+                    .city::after {
+
+                        content: 'NICE';
+                        font-weight: $bold;
+                        animation: changeCard1City $time infinite;
+
+                    }
+
+                }
+
+                /* === CARD 2 ANIMATIONS === */
+                .card-2 {
+
+                    background-size: cover;
+                    animation: changeCard2Background $time infinite;
+
+                    /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard2Country $time infinite;
+
+                    }
+                    */
+
+                    .city span {
+
+                        display: none;
+
+                    }
+
+                    .city::after {
+
+                        content: 'NICE';
+                        font-weight: $bold;
+                        animation: changeCard2City $time infinite;
+
+                    }
+
+                }
+
+                /* === CARD 3 ANIMATIONS === */
+                .card-3 {
+
+                    background-size: cover;
+                    animation: changeCard3Background $time infinite;
+
+                    /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard3Country $time infinite;
+
+                    }
+                    */
+
+                    .city span {
+
+                        display: none;
+
+                    }
+
+                    .city::after {
+
+                        content: 'NICE';
+                        font-weight: $bold;
+                        animation: changeCard3City $time infinite;
+
+                    }
+
+                }
+
+                /* === CARD 4 ANIMATIONS === */
+                .card-4 {
+
+                    background-size: cover;
+                    animation: changeCard4Background $time infinite;
+
+                    /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard4Country $time infinite;
+
+                    }
+                    */
+
+                    .city span {
+
+                        display: none;
+
+                    }
+
+                    .city::after {
+
+                        content: 'NICE';
+                        font-weight: $bold;
+                        animation: changeCard4City $time infinite;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        //TODO: 
+
+    }
+
+}

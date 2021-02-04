@@ -1,0 +1,905 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+/* === COLORS === */
+/* === IMAGES === */
+/* === ANIMATION === */
+/* === FONT === */
+/* === UTIL === */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* === COLORS === */
+/* === IMAGES === */
+/* === ANIMATION === */
+/* === FONT === */
+/* === UTIL === */
+/* === BACKGROUND ANIMATIONS ===*/
+@-webkit-keyframes changeMainBackground {
+  0%, 100% {
+    background-image: url("../barceloneta.jpg");
+  }
+  25% {
+    background-image: url("../nice.jpg");
+  }
+  50% {
+    background-image: url("../split.jpg");
+  }
+  75% {
+    background-image: url("../porto.jpg");
+  }
+}
+@keyframes changeMainBackground {
+  0%, 100% {
+    background-image: url("../barceloneta.jpg");
+  }
+  25% {
+    background-image: url("../nice.jpg");
+  }
+  50% {
+    background-image: url("../split.jpg");
+  }
+  75% {
+    background-image: url("../porto.jpg");
+  }
+}
+
+@-webkit-keyframes changeCountryMain {
+  0%, 100% {
+    opacity: 1;
+    content: 'Spain';
+  }
+  25% {
+    opacity: 1;
+    content: "France";
+  }
+  50% {
+    opacity: 1;
+    content: "Croatia";
+  }
+  75% {
+    opacity: 1;
+    content: "Portugal";
+  }
+}
+
+@keyframes changeCountryMain {
+  0%, 100% {
+    opacity: 1;
+    content: 'Spain';
+  }
+  25% {
+    opacity: 1;
+    content: "France";
+  }
+  50% {
+    opacity: 1;
+    content: "Croatia";
+  }
+  75% {
+    opacity: 1;
+    content: "Portugal";
+  }
+}
+
+@-webkit-keyframes changeCityMain {
+  0%, 100% {
+    opacity: 1;
+    content: 'BARCELONETA';
+  }
+  25% {
+    opacity: 1;
+    content: "NICE";
+  }
+  50% {
+    opacity: 1;
+    content: "SPLIT";
+  }
+  75% {
+    opacity: 1;
+    content: "PORTO";
+  }
+}
+
+@keyframes changeCityMain {
+  0%, 100% {
+    opacity: 1;
+    content: 'BARCELONETA';
+  }
+  25% {
+    opacity: 1;
+    content: "NICE";
+  }
+  50% {
+    opacity: 1;
+    content: "SPLIT";
+  }
+  75% {
+    opacity: 1;
+    content: "PORTO";
+  }
+}
+
+/* === CARDS ANIMATIONS === */
+@-webkit-keyframes changeCard1Background {
+  0%, 100% {
+    background-image: url("../nice-crp.jpg");
+  }
+  25% {
+    background-image: url("../split-crp.jpg");
+  }
+  50% {
+    background-image: url("../porto-crp.jpg");
+  }
+  75% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+}
+@keyframes changeCard1Background {
+  0%, 100% {
+    background-image: url("../nice-crp.jpg");
+  }
+  25% {
+    background-image: url("../split-crp.jpg");
+  }
+  50% {
+    background-image: url("../porto-crp.jpg");
+  }
+  75% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+}
+
+@-webkit-keyframes changeCard1Country {
+  0%, 100% {
+    content: 'France';
+  }
+  25% {
+    content: "Croatia";
+  }
+  50% {
+    content: "Portugal";
+  }
+  75% {
+    content: "Spain";
+  }
+}
+
+@keyframes changeCard1Country {
+  0%, 100% {
+    content: 'France';
+  }
+  25% {
+    content: "Croatia";
+  }
+  50% {
+    content: "Portugal";
+  }
+  75% {
+    content: "Spain";
+  }
+}
+
+@-webkit-keyframes changeCard1City {
+  0%, 100% {
+    content: 'NICE';
+  }
+  25% {
+    content: "SPLIT";
+  }
+  50% {
+    content: "PORTO";
+  }
+  75% {
+    content: "BARCELONETA";
+  }
+}
+
+@keyframes changeCard1City {
+  0%, 100% {
+    content: 'NICE';
+  }
+  25% {
+    content: "SPLIT";
+  }
+  50% {
+    content: "PORTO";
+  }
+  75% {
+    content: "BARCELONETA";
+  }
+}
+
+@-webkit-keyframes changeCard2Background {
+  0%, 100% {
+    background-image: url("../split-crp.jpg");
+  }
+  25% {
+    background-image: url("../porto-crp.jpg");
+  }
+  50% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  75% {
+    background-image: url("../nice-crp.jpg");
+  }
+}
+
+@keyframes changeCard2Background {
+  0%, 100% {
+    background-image: url("../split-crp.jpg");
+  }
+  25% {
+    background-image: url("../porto-crp.jpg");
+  }
+  50% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  75% {
+    background-image: url("../nice-crp.jpg");
+  }
+}
+
+@-webkit-keyframes changeCard2City {
+  0%, 100% {
+    content: 'SPLIT';
+  }
+  25% {
+    content: 'PORTO';
+  }
+  50% {
+    content: 'BARCELONETA';
+  }
+  75% {
+    content: 'NICE';
+  }
+}
+
+@keyframes changeCard2City {
+  0%, 100% {
+    content: 'SPLIT';
+  }
+  25% {
+    content: 'PORTO';
+  }
+  50% {
+    content: 'BARCELONETA';
+  }
+  75% {
+    content: 'NICE';
+  }
+}
+
+@-webkit-keyframes changeCard3Background {
+  0%, 100% {
+    background-image: url("../porto-crp.jpg");
+  }
+  25% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  50% {
+    background-image: url("../nice-crp.jpg");
+  }
+  75% {
+    background-image: url("../split-crp.jpg");
+  }
+}
+
+@keyframes changeCard3Background {
+  0%, 100% {
+    background-image: url("../porto-crp.jpg");
+  }
+  25% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  50% {
+    background-image: url("../nice-crp.jpg");
+  }
+  75% {
+    background-image: url("../split-crp.jpg");
+  }
+}
+
+@-webkit-keyframes changeCard3City {
+  0%, 100% {
+    content: 'PORTO';
+  }
+  25% {
+    content: 'BARCELONETA';
+  }
+  50% {
+    content: 'NICE';
+  }
+  75% {
+    content: 'SPLIT';
+  }
+}
+
+@keyframes changeCard3City {
+  0%, 100% {
+    content: 'PORTO';
+  }
+  25% {
+    content: 'BARCELONETA';
+  }
+  50% {
+    content: 'NICE';
+  }
+  75% {
+    content: 'SPLIT';
+  }
+}
+
+@-webkit-keyframes changeCard4Background {
+  0%, 100% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  25% {
+    background-image: url("../nice-crp.jpg");
+  }
+  50% {
+    background-image: url("../split-crp.jpg");
+  }
+  75% {
+    background-image: url("../porto-crp.jpg");
+  }
+}
+
+@keyframes changeCard4Background {
+  0%, 100% {
+    background-image: url("../barceloneta-crp.jpg");
+  }
+  25% {
+    background-image: url("../nice-crp.jpg");
+  }
+  50% {
+    background-image: url("../split-crp.jpg");
+  }
+  75% {
+    background-image: url("../porto-crp.jpg");
+  }
+}
+
+@-webkit-keyframes changeCard4City {
+  0%, 100% {
+    content: 'BARCELONETA';
+  }
+  25% {
+    content: 'NICE';
+  }
+  50% {
+    content: 'SPLIT';
+  }
+  75% {
+    content: 'PORTO';
+  }
+}
+
+@keyframes changeCard4City {
+  0%, 100% {
+    content: 'BARCELONETA';
+  }
+  25% {
+    content: 'NICE';
+  }
+  50% {
+    content: 'SPLIT';
+  }
+  75% {
+    content: 'PORTO';
+  }
+}
+
+/* === RESPONSIVE === */
+/* === MAIN WRAPPER === */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../barceloneta.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: changeMainBackground 40s infinite;
+          animation: changeMainBackground 40s infinite;
+  /* === DARK OVERLAY FOR BACKGROUND === */
+  /* === CONTENT === */
+}
+
+.wrapper .overlay {
+  z-index: 0;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper .content {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* === TOP BAR === */
+  /* === MAIN CONTENT === */
+}
+
+.wrapper .content nav {
+  width: 100%;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* === TOP BAR RESPONSIVE === */
+  /* === LEFT PART === */
+  /* === RIGHT PART === */
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapper .content nav .left {
+  width: 50%;
+  /* === LEFT PART RESPONSIVE === */
+}
+
+.wrapper .content nav .left ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.wrapper .content nav .left ul .fa-globe {
+  font-size: 30px;
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content nav .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.wrapper .content nav .right {
+  width: 50%;
+  /* === RIGHT PART RESPONSIVE === */
+}
+
+.wrapper .content nav .right ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* === NAVI MENU RESPONSIVE === */
+}
+
+.wrapper .content nav .right ul a {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  padding-bottom: 5px;
+}
+
+.wrapper .content nav .right ul a:hover {
+  border-bottom: 2px solid #fc5f26;
+}
+
+@media (max-width: 600px) {
+  .wrapper .content nav .right ul {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content nav .right {
+    width: 100%;
+    margin: 2%;
+  }
+}
+
+.wrapper .content .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vh;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* === LEFT PART === */
+  /* === RIGHT PART === */
+}
+
+.wrapper .content .main .main-left {
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 5%;
+  /* === LEFT PART RESPONSIVE === */
+  /* === TITLE AND SUBTITLE WITH ANIMATIONS === */
+  /* === PARA AND BUTTONS === */
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content .main .main-left {
+    width: 100%;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper .content .main .main-left {
+    margin-bottom: 40%;
+  }
+}
+
+@media (max-width: 430px) {
+  .wrapper .content .main .main-left {
+    margin-bottom: 50%;
+  }
+}
+
+.wrapper .content .main .main-left .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  /* === BAR RESPONSIVE === */
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content .main .main-left .bar {
+    width: 70px;
+  }
+}
+
+.wrapper .content .main .main-left h3, .wrapper .content .main .main-left p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper .content .main .main-left p {
+  /* === PARA REPSONSIVE === */
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content .main .main-left p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper .content .main .main-left p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .wrapper .content .main .main-left p {
+    width: 300px;
+  }
+}
+
+.wrapper .content .main .main-left h1 {
+  font-size: 450%;
+}
+
+.wrapper .content .main .main-left .country span {
+  display: none;
+}
+
+.wrapper .content .main .main-left .country::after {
+  content: 'Spain';
+  -webkit-animation: changeCountryMain 40s infinite;
+          animation: changeCountryMain 40s infinite;
+}
+
+.wrapper .content .main .main-left .city span {
+  display: none;
+}
+
+.wrapper .content .main .main-left .city::after {
+  content: 'BARCELONETA';
+  font-size: 450%;
+  font-weight: 700;
+  -webkit-animation: changeCityMain 40s infinite;
+          animation: changeCityMain 40s infinite;
+  /* === CITY TITLE RESPONSIVE === */
+}
+
+@media (max-width: 600px) {
+  .wrapper .content .main .main-left .city::after {
+    font-size: 300%;
+  }
+}
+
+.wrapper .content .main .main-left .bottom .save {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fc5f26;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.wrapper .content .main .main-left .bottom .save:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrapper .content .main .main-left .bottom .button {
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.wrapper .content .main .main-left .bottom .button:hover {
+  background-color: #fc5f26;
+  border: 1px solid #fc5f26;
+}
+
+.wrapper .content .main .main-left .bottom .button h3 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.wrapper .content .main .main-right {
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5%;
+  /* === MAIN RIGHT RESPONSIVE === */
+  /* === CARD === */
+  /* === CARD 1 ANIMATIONS === */
+  /* === CARD 2 ANIMATIONS === */
+  /* === CARD 3 ANIMATIONS === */
+  /* === CARD 4 ANIMATIONS === */
+}
+
+@media (max-width: 1300px) {
+  .wrapper .content .main .main-right {
+    display: none;
+  }
+}
+
+.wrapper .content .main .main-right .card {
+  height: 300px;
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  /* === CARD'S INFO === */
+}
+
+.wrapper .content .main .main-right .card .info {
+  margin-top: 140%;
+  margin-left: 5%;
+}
+
+.wrapper .content .main .main-right .card .info .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.wrapper .content .main .main-right .card .info .country {
+  margin: 10px 0px;
+}
+
+.wrapper .content .main .main-right .card .info .country p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper .content .main .main-right .card .info h3 {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.wrapper .content .main .main-right .card-1 {
+  background-size: cover;
+  -webkit-animation: changeCard1Background 40s infinite;
+          animation: changeCard1Background 40s infinite;
+  /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard1Country $time infinite;
+
+                    }
+                    */
+}
+
+.wrapper .content .main .main-right .card-1 .city span {
+  display: none;
+}
+
+.wrapper .content .main .main-right .card-1 .city::after {
+  content: 'NICE';
+  font-weight: 700;
+  -webkit-animation: changeCard1City 40s infinite;
+          animation: changeCard1City 40s infinite;
+}
+
+.wrapper .content .main .main-right .card-2 {
+  background-size: cover;
+  -webkit-animation: changeCard2Background 40s infinite;
+          animation: changeCard2Background 40s infinite;
+  /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard2Country $time infinite;
+
+                    }
+                    */
+}
+
+.wrapper .content .main .main-right .card-2 .city span {
+  display: none;
+}
+
+.wrapper .content .main .main-right .card-2 .city::after {
+  content: 'NICE';
+  font-weight: 700;
+  -webkit-animation: changeCard2City 40s infinite;
+          animation: changeCard2City 40s infinite;
+}
+
+.wrapper .content .main .main-right .card-3 {
+  background-size: cover;
+  -webkit-animation: changeCard3Background 40s infinite;
+          animation: changeCard3Background 40s infinite;
+  /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard3Country $time infinite;
+
+                    }
+                    */
+}
+
+.wrapper .content .main .main-right .card-3 .city span {
+  display: none;
+}
+
+.wrapper .content .main .main-right .card-3 .city::after {
+  content: 'NICE';
+  font-weight: 700;
+  -webkit-animation: changeCard3City 40s infinite;
+          animation: changeCard3City 40s infinite;
+}
+
+.wrapper .content .main .main-right .card-4 {
+  background-size: cover;
+  -webkit-animation: changeCard4Background 40s infinite;
+          animation: changeCard4Background 40s infinite;
+  /*
+                    .country span {
+
+                        display: none;
+
+                    }
+
+                    .country::after {
+
+                        content: 'Spain';
+                        animation: changeCard4Country $time infinite;
+
+                    }
+                    */
+}
+
+.wrapper .content .main .main-right .card-4 .city span {
+  display: none;
+}
+
+.wrapper .content .main .main-right .card-4 .city::after {
+  content: 'NICE';
+  font-weight: 700;
+  -webkit-animation: changeCard4City 40s infinite;
+          animation: changeCard4City 40s infinite;
+}

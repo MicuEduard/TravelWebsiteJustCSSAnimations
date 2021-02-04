@@ -1,0 +1,27 @@
+@keyframes changeCard2Background {
+
+    0%, 100% {
+
+        background-image: $split-crp;
+
+    }
+
+    25% {
+
+        background-image: $porto-crp;
+
+    }
+
+    50% {
+
+        background-image: $barceloneta-crp;
+
+    }
+
+    75% {
+
+        background-image: $nice-crp;
+
+    }
+
+}

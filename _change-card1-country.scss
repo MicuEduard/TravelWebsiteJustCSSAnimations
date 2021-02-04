@@ -1,0 +1,27 @@
+@keyframes changeCard1Country {
+
+    0%, 100% {
+
+        content: 'France';
+
+    }
+
+    25% {
+
+        content: "Croatia";
+
+    }
+
+    50% {
+
+        content: "Portugal";
+
+    }
+
+    75% {
+
+        content: "Spain";
+
+    }
+
+}
